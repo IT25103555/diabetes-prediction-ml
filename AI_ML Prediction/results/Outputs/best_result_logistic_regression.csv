@@ -1,2 +1,0 @@
-Variety,Accuracy,Precision,Recall,F1,ROC-AUC,Model,Member,Tuned Accuracy,Tuned F1,Tuned ROC-AUC
-Balanced class weight (C=1),0.7338,0.6032,0.7037,0.6496,0.8126,Logistic Regression,Ishki M A (IT25103555),0.7078,0.6154,0.8104
