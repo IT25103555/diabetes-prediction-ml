@@ -4,16 +4,26 @@ Individual contribution to a 6-member group project for **IT2011 – Artificial 
 
 The goal is a binary classifier that predicts whether a patient has diabetes (`Outcome = 1`) from 8 routine clinical measurements. This repository contains my two parts of the project:
 
-1. **Missing Data Handling**: preprocessing technique (`notebooks/IT_25103555_MissingData.ipynb`)
-2. **Logistic Regression**: classification model (`notebooks/IT_25103555_LogisticRegression.ipynb`)
+1. **Missing Data Handling**: preprocessing technique (`Notebook/IT_25103555_MissingData.ipynb`)
+2. **Logistic Regression**: classification model (`Modal/IT_25103555_LogisticRegression.ipynb`)
 
 The other members worked on outlier removal, encoding, scaling, feature selection, PCA, SVM, Random Forest, K-Means and an MLP. Those notebooks are not included here.
+
+## Repository layout
+
+```
+├── README.md
+├── Notebook/   Missing Data Handling notebook
+├── Modal/      Logistic Regression notebook
+├── Data/raw/   diabetes.csv (Pima Indians Diabetes dataset)
+└── results/    charts and result files saved by the notebooks
+```
 
 ## Dataset
 
 - **Pima Indians Diabetes Database**: 768 female patients aged 21+, 500 non-diabetic and 268 diabetic.
 - Source: UCI Machine Learning Repository / National Institute of Diabetes and Digestive and Kidney Diseases (Smith et al., 1988).
-- A copy is in `data/raw/diabetes.csv`. The notebooks can also download it from a public mirror.
+- A copy is in `Data/raw/diabetes.csv`. The notebooks can also download it from a public mirror.
 - Features: `Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age`.
 
 ## What I did
@@ -62,7 +72,7 @@ Held-out test set (154 patients), best preprocessing (StandardScaler plus engine
 
 1. Open the notebooks in Google Colab, or in Jupyter with Python 3.10+.
 2. Install the libraries: `pip install pandas numpy scikit-learn matplotlib seaborn`.
-3. Run all cells. The notebooks use `data/raw/diabetes.csv` if present and otherwise download the dataset.
+3. Run all cells. The notebooks look for `data/raw/diabetes.csv` and download the dataset from the mirror if it is not found. Charts and result files are saved under `results/`.
 
 ## Tools
 
