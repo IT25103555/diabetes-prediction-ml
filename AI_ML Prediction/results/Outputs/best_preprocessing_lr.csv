@@ -1,0 +1,2 @@
+Best Preprocessing,Test Accuracy,Test Precision,Test Recall,Test F1,Test ROC-AUC,Model,Member,Best CV F1
+E. B + BMI/Age encoding,0.7532,0.6176,0.7778,0.6885,0.8259,Logistic Regression,Ishki M A (IT25103555),0.697
